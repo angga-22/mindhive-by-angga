@@ -1,10 +1,13 @@
 <template>
   <div>
     <select v-model="shippingAddress">
-      <option value="us">United States</option>
-      <option value="id">Indonesia</option>
-      <option value="aus">Australia</option>
-      <option value="sg">Singapore</option>
+      <option
+        v-for="country in countries"
+        :key="country.value"
+        :value="country.value"
+      >
+        {{ country.label }}
+      </option>
     </select>
   </div>
 </template>
@@ -20,7 +23,13 @@ export default defineComponent({
   },
   setup() {
     const shippingAddress = ref("us");
-    return { shippingAddress };
+    const countries = [
+      { value: "us", label: "United States" },
+      { value: "id", label: "Indonesia" },
+      { value: "aus", label: "Australia" },
+      { value: "sg", label: "Singapore" },
+    ];
+    return { shippingAddress, countries };
   },
 });
 </script>
@@ -29,14 +38,13 @@ select {
   padding: 0 0.3rem;
   margin: 0.5rem 0;
   width: 100%;
-  height: 36px;
+  height: 44px;
   border: none;
   background: #fff;
   outline: none;
   border-radius: 0.2rem;
 }
 option {
-  width: 50%;
   height: 36px;
   border: none;
 }

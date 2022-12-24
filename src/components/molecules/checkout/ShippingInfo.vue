@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Button content="payment" />
+    <Button content="Payment" />
     <div class="horizontal-line">
       <div class="line"></div>
       <Text content="Or pay with card" fs="16" />

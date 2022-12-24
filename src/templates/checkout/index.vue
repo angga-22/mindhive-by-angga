@@ -35,5 +35,12 @@ section {
 }
 div {
   display: flex;
+  width: 100%;
+}
+@media screen and (max-width: 992px) {
+  div {
+    display: flex;
+    flex-direction: column;
+  }
 }
 </style>

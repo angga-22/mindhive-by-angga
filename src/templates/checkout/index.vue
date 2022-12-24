@@ -1,11 +1,11 @@
 <template>
-  <main>
-    <header />
-    <section>
+  <section>
+    <Header />
+    <div>
       <shipping-card />
       <shipping-form />
-    </section>
-  </main>
+    </div>
+  </section>
 </template>
 <script>
 import { defineComponent } from "vue";
@@ -27,8 +27,13 @@ export default defineComponent({
 </script>
 <style scoped>
 section {
-  width: 100%;
-  background: blue;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+  background: rgb(232, 232, 241);
+  border-radius: 1rem;
+}
+div {
   display: flex;
 }
 </style>

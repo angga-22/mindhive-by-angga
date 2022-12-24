@@ -1,6 +1,5 @@
 <template>
   <main>
-    <h1>{{ data }}</h1>
     <checkout />
   </main>
 </template>
@@ -20,3 +19,11 @@ export default defineComponent({
   },
 });
 </script>
+<style scoped>
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+</style>

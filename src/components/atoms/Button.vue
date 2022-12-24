@@ -1,7 +1,5 @@
 <template>
-  <div class="btn">
-    <button @click="$emit('handleClick')">{{ content }}</button>
-  </div>
+  <button @click="$emit('handleClick')">{{ content }}</button>
 </template>
 <script>
 import { defineComponent } from "vue";
@@ -20,19 +18,12 @@ export default defineComponent({
 });
 </script>
 <style scoped>
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
 button {
   width: 100%;
-  height: 100%;
   border: none;
-  background-color: #fff;
-  color: #000;
+  margin: 0 auto;
+  background-color: rgb(32, 32, 32);
+  color: #fff;
   font-size: 1.5rem;
   font-weight: 700;
   cursor: pointer;

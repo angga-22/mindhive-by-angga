@@ -1,6 +1,6 @@
 <template>
   <section>
-    <Image :imgUrl="imgFile" alt="img" />
+    <Image :imgUrl="imgFile" alt="img" width="300" height="300" />
   </section>
 </template>
 <script>
@@ -21,5 +21,8 @@ export default defineComponent({
 <style scoped>
 section {
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>

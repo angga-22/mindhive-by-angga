@@ -31,7 +31,7 @@ export default defineComponent({
 <style scoped>
 input {
   padding: 0.5rem;
-  margin: 0.5rem 1rem;
+  margin: 0.5rem 0;
   height: 100%;
   border: none;
   background-color: #fff;
@@ -42,12 +42,9 @@ input {
   outline: none;
   border-radius: 0.2rem;
 }
-label {
-  padding: 0 1rem;
-}
+
 div {
   display: flex;
   flex-direction: column;
-  background-color: red;
 }
 </style>

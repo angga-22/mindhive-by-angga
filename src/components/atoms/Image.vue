@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img :src="imgUrl" :alt="alt" />
+    <img :src="imgUrl" :alt="alt" :width="width" :height="height" />
   </div>
 </template>
 <script>
@@ -15,6 +15,12 @@ export default defineComponent({
       type: String,
       required: true,
     },
+    width: {
+      default: 100,
+    },
+    height: {
+      default: 100,
+    },
   },
   setup() {
     const data = "home";
@@ -23,8 +29,4 @@ export default defineComponent({
 });
 </script>
 <style scoped>
-img {
-  width: 100%;
-  height: 100%;
-}
 </style>

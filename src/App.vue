@@ -1,5 +1,7 @@
 <template>
-  <Home />
+  <main>
+    <Home />
+  </main>
 </template>
 <script>
 import Home from "./views/HomeView.vue";

@@ -8,7 +8,10 @@ import { defineComponent } from "vue";
 export default defineComponent({
   name: "Image",
   props: {
-    content: {
+    imgUrl: {
+      required: true,
+    },
+    alt: {
       type: String,
       required: true,
     },

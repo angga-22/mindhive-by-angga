@@ -29,6 +29,7 @@ li {
 }
 a {
   text-decoration: none;
-  color: #fff;
+  color: rgb(61, 61, 61);
+  font-weight: bold;
 }
 </style>

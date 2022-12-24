@@ -21,6 +21,9 @@ export default defineComponent({
 });
 </script>
 <style scoped>
+center {
+  text-align: center;
+}
 p {
   line-height: 0;
 }

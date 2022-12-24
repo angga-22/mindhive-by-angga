@@ -1,7 +1,12 @@
 <template>
   <div>
     <label :for="name">{{ label }}</label>
-    <input :name="name" :type="type" @change="$emit('handleChange')" />
+    <input
+      :name="name"
+      :type="type"
+      @change="$emit('handleChange')"
+      :placeholder="placeholder"
+    />
   </div>
 </template>
 <script>
@@ -20,6 +25,10 @@ export default defineComponent({
     type: {
       type: String,
       required: true,
+    },
+    placeholder: {
+      type: String,
+      required: false,
     },
   },
   setup() {
